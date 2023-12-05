@@ -1,0 +1,88 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 33.33%;
+  margin: auto;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.header {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  margin: 0;
+}
+
+.images-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.flag img {
+  width: 230px; 
+  height: auto;
+}
+
+.coat-of-arms img {
+  width: 150px;
+  height: auto;
+}
+
+.flag .label, .coat-of-arms .label {
+  display: block;
+  margin-top: 10px; /* Відступ для вирівнювання текстів */
+}
+
+.flag .label {
+  position: relative;
+  top: 25px; /* Додатковий зсув для слова "Прапор" */
+}
+
+.anthem-section, .map-section {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.anthem-title {
+  color: blue;
+  font-weight: bold;
+}
+
+.anthem-text, .anthem-version {
+  color: blue;
+}
+
+.anthem-file {
+  color: red;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .images-section, .anthem-section, .map-section {
+    flex-direction: column;
+  }
+
+  .flag img, .coat-of-arms img {
+    width: 80%;
+  }
+}
